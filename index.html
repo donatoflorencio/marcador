@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcador de Truco</title>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- css -->
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="icons-left">
+      <span class="material-symbols-outlined icons">menu</span>
+      <h4 class="titulo">Truco</h4>
+    </div>
+    <div class="icons-right">
+      <span class="material-symbols-outlined icons">close</span>
+      <span class="material-symbols-outlined icons">history</span>
+      <span class="material-symbols-outlined icons">more_vert<span>
+    </div>
+  </header>
+  <main class="conteudo">
+    <div id="container-um">
+      <section class="container-informacao">
+        <aside class="nomes">
+          <span class="nome-nos">Nós</span>
+          <span class="nome-eles">Eles</span>
+        </aside>
+        <aside class="resultado">
+          <span class="resultado-um">0</span>
+          <span class="resultado-dois">0</span>
+        </aside>
+      </section>
+    </div>
+    <div id="container-dois">
+      <section class="container-soma">
+        <div class="imagem-losango">
+          <img class="img-losango-um" src="triangulo.png" alt="Imagem de um Losango da esqueda">
+          <img class="img-losango-dois" src="triangulo.png" alt="Imagem de um Losango da direita">
+        </div>
+        <div class="imagem-zap">
+          <img class="img-zap-um" src="zap.png" alt="Imagem do zap da esquerda">
+          <img class="img-zap-dois" src="zap.png" alt="Imagem do zap da direita">
+        </div>
+      </section>
+      <section class="container-truco">
+        <span class="material-symbols-outlined icons-heart-left">favorite<span>
+        <span class="text-truco">Truco!</span>
+        <span class="material-symbols-outlined icons-heart-right">favorite<span></span>
+      </section>
+      <section class="container-vitorias">
+        <span class="text-vitorias">Vitórias</span>
+        <span class="resultado-um">0</span>
+        <span class="resultado-dois">0</span>
+      </section>
+    </div>
+  </main>
+  <script src="javascript/index.js"></script>
+</body>
+</html>
