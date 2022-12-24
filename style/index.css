@@ -49,6 +49,9 @@ body, html {
   justify-content: space-between;
   padding: 0 4%;
 }
+.header .icons {
+  font-size: 27px;
+}
 
 .icons-left {
   display: inline-flex;
