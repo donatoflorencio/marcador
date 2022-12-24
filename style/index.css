@@ -1,186 +1,236 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
-  cursor: context-menu;
 }
 
 body, html {
-  width: 100vw;
-  height: 98vh;
-  overflow: hidden;
-  background-color: grey;
+  max-height: 100vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.cabecalho { /*cabeçalho*/
-  background-color: #000;
-  width: 100vw;
-  height: 60px;
+#conteudo {
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  background: darkgray;
+  background-image: url(/imagens/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: 
+  "header header header header header header"
+  "nome nome nome nome nome nome"
+  "resultado resultado resultado resultado resultado resultado"
+  "triangulo triangulo triangulo triangulo triangulo triangulo"
+  "adicionar adicionar adicionar adicionar adicionar adicionar"
+  "truco truco truco truco truco truco"
+  "vitoria vitoria vitoria vitoria vitoria vitoria"
+  "final final final final final final"
+  ;
+}
+/* header*/
+.header {
+  color: white;
+  background-color: black; 
+  grid-area: header;
+  max-width: 100vw;
+  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 4%;
-}
-
-.cabecalho .icons {
-  color: #fff;
-  font-weight: bold;
+  padding: 0 4%;
 }
 
 .icons-left {
-  display: flex;
-  gap: 25px;
-}
-
-
-.icons-left .titulo {
-  color: #fff;
-  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .icons-right {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 25px;
+  gap: 24px;
 }
 
-.icons-right .icons:nth-child(3) {
+.icons-right span:nth-child(3) {
   width: 18px;
   height: 24px;
   margin-left: -6px;
 }
+/* //// */
 
-.conteudo { /* main */
-  width: 100vw;
-  height: calc(100vh - 160px);
-  position: relative;
-  margin-top: 5%;
+/* nome*/
+.nome {
+  /* background-color: red;  */
+  grid-area: nome;
+  height: 15vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-#container-um {
-  height: 50%;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
-#container-dois {
-  height: 50%;
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.nomes {
-  display: flex;
-  justify-content: center;
-  gap: 40%;
-  width: 100%;
-  height: 50%;
-
-  font-size: 54px;
+.nome span {
+  color: #fff; 
+  font-size: 70px;
   font-weight: bold;
-  color: #fff;
-  letter-spacing: -2px;
 }
+/* //// */
 
+/* resultado*/
 .resultado {
-  display: flex;
-  justify-content: center;
-  gap: 45%;
-  width: 100%;
-  height: 50%;
-
-  font-family: sans-serif;
-  font-size: 100px;
-  font-weight: 900;
-  color: #fff;
-  margin-top: -10%;
-}
-
-.img-losango-um {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 2%;
-  transform: translateY(-50%);
-}
-
-.img-losango-dois {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
-}
-
-.imagem-zap {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-
-.imagem-zap .img-zap-um, .img-zap-dois {
-  width: 150px;
-  height: 160px;
-}
-
-.container-truco {
-  color: white;
-  width: 75%;
-  height: 65px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 7px;
-  margin: 15% auto 0px auto;
-
+  /* background-color: blue;  */
+  grid-area: resultado;
+  height: 15vh;
+  max-width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2%;
+  justify-content: space-around;
 }
 
-.img-heart-left,
-.img-heart-right {
-  color: red;
-  width: 50px;
-}
-
-.container-truco .text-truco {
-  font-size: 24px;
+.resultado span {
+  color: #fff;
+  font-size: 14vh;
   font-weight: bold;
 }
+/* ////*/
 
-.container-vitorias {
-  height: 100px;
-  width: 100%;
+/* triângulo*/
+.triangulo {
+  grid-area: triangulo;
+  height: auto;
+  width: 100vw;
+  }
+
+  .triangulo .div-01-02 {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .triangulo .div-01 {
+    height: auto;
+    width: auto;
+    position: fixed;
+    top: 45%;
+    left: 0%;
+    margin: 0 2%;
+  }
+
+  .triangulo .div-02 {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 45%;
+    right: 0%;
+    margin: 0 2%;
+  }
+
+  .triangulo div img {
+    width: 60px;
+  }
+
+/* ///// */
+
+/* adicionar*/
+.adicionar {
+  grid-area: adicionar;
+  height: 23vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  .adicionar > div {
+    height: auto;
+    width: auto;
+    margin: 1px;
+  }
+
+  .adicionar > div img {
+    max-width: 160px;
+  }
+/* ///// */
+
+/* truco*/
+.truco {
+  grid-area: truco;
+  height: auto;
+  max-width: 100vw;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: -18% auto 0px auto;
-}
+  }
 
-.text-vitorias {
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
-}
+  .truco .div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 0 2%;
+  }
 
-.container-vitorias div {
-  width: 100%;
+  .truco .div p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+/* //// */
+
+/* vitória*/
+.vitoria {
+  grid-area: vitoria;
+  height: auto;
+  max-width: 100vw;
   display: flex;
-  justify-content: space-evenly;
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
-}
+  justify-content: center;
+  align-items: flex-start;
+  }
+
+  .vitoria div {
+    width: auto;
+    height: auto;
+  }
+
+  .vitoria div span {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+  }
+/* //// */
+
+/* resutado final*/
+.resultato-final { 
+  grid-area: final;
+  height: auto;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  }
+
+  .resultato-final div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .resultato-final div span {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+  }
