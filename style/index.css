@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
-* {
+*, a, li {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
 }
 
 body, html {
@@ -113,13 +116,13 @@ body, html {
     height: 70px;
     width: 100%;
     display: flex;
-    
+    position: relative;
   }
 
   .triangulo .div-01 {
     height: auto;
     width: auto;
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 0%;
     margin: 0 2%;
@@ -128,7 +131,7 @@ body, html {
   .triangulo .div-02 {
     width: auto;
     height: auto;
-    position: fixed;
+    position: absolute;
     top: 45%;
     right: 0%;
     margin: 0 2%;
