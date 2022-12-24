@@ -35,6 +35,7 @@ body, html {
   "vitoria vitoria vitoria vitoria vitoria vitoria"
   "final final final final final final"
   ;
+  position: relative;
 }
 /* header*/
 .header {
@@ -67,6 +68,7 @@ body, html {
   margin-left: -6px;
 }
 /* //// */
+
 
 /* nome*/
 .nome {
