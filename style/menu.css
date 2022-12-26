@@ -1,5 +1,5 @@
 /* menu */
-.menu {
+#nav {
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -7,14 +7,19 @@
   left: 0%;
   right: 30%;
   z-index: 2;
-  visibility: visible;
+  display: none;
 }
 
-.menu:hover {
-  visibility: hidden;
+#nav.active #menu-icon {
+  display: flex;
 }
 
-.menu .menu-titulo {
+#nav.active #menuIcon {
+  display: flex;
+}
+
+
+#nav .menu-titulo {
   width: 100%;
   height: 13%;
   background: linear-gradient(to right, rgb(94, 180, 174) 10%, rgb(88, 188, 181), rgb(56, 226, 215));
@@ -27,12 +32,12 @@
   margin-bottom: 40px;
 }
 
-.menu .menu-titulo h3 {
+#nav .menu-titulo h3 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.menu .menu-estilos {
+#nav .menu-estilos {
   width: 100%;
   height: 10%;
   display: flex;
@@ -43,28 +48,28 @@
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.208);
 }
 
-.menu .menu-estilos ul {
+#nav .menu-estilos ul {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.menu .menu-estilos ul li {
+#nav .menu-estilos ul li {
   padding-top: 10px;
   padding-bottom: -10px;
 }
 
-.menu p {
+#nav p {
   color: rgba(0, 0, 0, 0.655);
   font-weight: 700;
   font-size: 15px;
 }
 
-.menu .menu-lista {
+#nav .menu-lista {
   padding-left: 20px;
 }
 
-.menu .menu-lista ul {
+#nav .menu-lista ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -73,14 +78,14 @@
   align-self: center;
 }
 
-.menu .menu-lista ul li  {
+#nav .menu-lista ul li  {
   display: flex;
   align-items: center;
   height: auto;
   gap: 10px;
 }
 
-.menu .menu-lista ul li a {
+#nav .menu-lista ul li a {
   color: black;
   font-size: 14px;
   font-weight: 700;
