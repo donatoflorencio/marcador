@@ -7,3 +7,14 @@ function toggleMenu() {
 }
 
 menu.addEventListener('click', toggleMenu)
+
+// 
+
+let menuClose =document.getElementById('menu-close')
+
+
+function toggleMenu() {
+  nav.classList.toggle('active')
+}
+
+menuClose.addEventListener('click', toggleMenu)

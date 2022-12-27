@@ -10,17 +10,14 @@
   display: none;
 }
 
+
+#icon-menu {
+  z-index: 100;
+}
+
 #nav.active {
   display: block;
 }
-
-
-#nav.active .menu-titulo {
-  z-index: -5;
-}
-
-
-
 
 #nav .menu-titulo {
   width: 100%;
@@ -94,4 +91,6 @@
   font-weight: 700;
 }
 
-/* //// */
+/* //menu-close// */
+
+
