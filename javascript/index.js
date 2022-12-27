@@ -1,8 +1,9 @@
-const btn = document.getElementById('icon-menu')
+let menu = document.getElementById('icon-menu')
+let nav = document.getElementById('nav')
+
 
 function toggleMenu() {
-  const nav = document.getElementById('nav')
   nav.classList.toggle('active')
 }
 
-btn.addEventListener('click', toggleMenu)
+menu.addEventListener('click', toggleMenu)

@@ -10,13 +10,16 @@
   display: none;
 }
 
-#nav.active #menu-icon {
-  display: flex;
+#nav.active {
+  display: block;
 }
 
-#nav.active #menuIcon {
-  display: flex;
+
+#nav.active .menu-titulo {
+  z-index: -5;
 }
+
+
 
 
 #nav .menu-titulo {
