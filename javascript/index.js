@@ -1,20 +1,21 @@
-let menu = document.getElementById('icon-menu')
-let nav = document.getElementById('nav')
+let menu = document.getElementById("icon-menu");
+let nav = document.getElementById("nav")
+let menuClose = document.getElementById("menu-close")
+let iconNone = document.querySelector(".icon-none")
 
 
-function toggleMenu() {
-  nav.classList.toggle('active')
-}
-
-menu.addEventListener('click', toggleMenu)
-
-// 
-
-let menuClose =document.getElementById('menu-close')
+  if (nav.style.display = "none") {
+    menu.addEventListener("click", function() {
+      nav.style.display = "block"
+      iconNone.style.display = "none"
 
 
-function toggleMenu() {
-  nav.classList.toggle('active')
-}
 
-menuClose.addEventListener('click', toggleMenu)
+      if (nav.style.display = "block") {
+        menuClose.addEventListener("click", function(){
+          nav.style.display = "none"
+          iconNone.style.display = "block"
+        })
+      }
+    }
+  )}

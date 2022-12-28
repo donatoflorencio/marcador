@@ -60,11 +60,11 @@ body, html {
   gap: 24px;
 }
 
-/* .icons-right {
+.icons-right {
   display: inline-flex;
   align-items: center;
   gap: 24px;
-} */
+}
 
 .icons-right span:nth-child(3) {
   width: 18px;
