@@ -10,11 +10,6 @@
   display: none;
 }
 
-
-#icon-menu {
-  z-index: 100;
-}
-
 #nav.active {
   display: block;
 }
@@ -92,5 +87,23 @@
 }
 
 /* //menu-close// */
+
+#menu-close {
+  background-color: rgba(255, 0, 0, 0.159);
+  position: absolute;
+  right: 0;
+  top: 0%;
+  bottom: 0%;
+  width: 30vw;
+  z-index: 100;
+  padding-top: 2vh;
+
+  display: flex;
+  gap: 20px;
+}
+
+#nav.active #menu-close{
+  background-color: black;
+}
 
 
