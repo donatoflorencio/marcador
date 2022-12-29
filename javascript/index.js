@@ -8,14 +8,10 @@ let iconNone = document.querySelector(".icon-none")
     menu.addEventListener("click", function() {
       nav.style.display = "block"
       iconNone.style.display = "none"
-
-
-
-      if (nav.style.display = "block") {
-        menuClose.addEventListener("click", function(){
-          nav.style.display = "none"
-          iconNone.style.display = "block"
-        })
-      }
     }
-  )}
+  )
+  menuClose.addEventListener("click", function(){
+    nav.style.display = "none"
+    iconNone.style.display = "block"
+  })
+}

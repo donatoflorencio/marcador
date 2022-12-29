@@ -63,7 +63,7 @@
 #nav .menu-lista ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   height: auto;
   justify-content: center;
   align-self: center;
@@ -80,6 +80,14 @@
   color: black;
   font-size: 14px;
   font-weight: 700;
+  padding: 2%;
+}
+
+
+#nav .menu-lista ul li a:hover {
+  border-radius: 8px;
+  background-color: #c4c4c4b0;
+  transition: .6s;
 }
 
 
