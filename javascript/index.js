@@ -1,8 +1,7 @@
-let menu = document.getElementById("icon-menu");
+let menu = document.getElementById("icon-menu")
 let nav = document.getElementById("nav")
-let menuClose = document.getElementById("menu-close")
-let iconsNone = document.querySelectorAll("icons-none")
 let showSidebar = false;
+
 
 function toggleSidebar() {
   showSidebar = !showSidebar;
@@ -10,15 +9,16 @@ function toggleSidebar() {
 
   if(showSidebar) {
 
-    nav.style.display = "block"
+    nav.style.right = '30%'
+    nav.style.left = '0%'
 
-    menuClose.style.display = "block"
+    nav.style.animationName = "showSidebar"
 
   } else {
 
-    nav.style.display = "none"
-
-    menuClose.style.display = "none"
+    nav.style.right = "100%"
+    nav.style.left = '-100%'
+    nav.style.animationName = ""
 
   }
 }
@@ -28,23 +28,12 @@ function closeSidebar() {
 if(showSidebar) {
 
   toggleSidebar();
-  
-}
 
 }
 
+}
 
-/* if (nav.style.display = "none") {
-    menu.addEventListener("click", function() {
-      nav.style.display = "block"
-      menuClose.style.display = "block"
-      iconsNone.style.display = "none"
-    }
-  )
-  menuClose.addEventListener("click", function(){
-    nav.style.display = "none"
-    
-  })
-}*/
+
+
 
 
