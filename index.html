@@ -13,13 +13,13 @@
   <main id="conteudo">
     <section class="header">
       <div class="icons-left">
-        <span id="icon-menu" class="material-symbols-outlined icons">menu</span>
+        <span id="icon-menu" class="material-symbols-outlined icons" onclick="toggleSidebar()">menu</span>
         <h4 class="titulo">Truco</h4>
       </div>
       <div class="icons-right">
-        <span class="material-symbols-outlined icons" id="menu-close">close</span>
-        <span class="material-symbols-outlined icons icon-none">history</span>
-        <span class="material-symbols-outlined icons">more_vert</span>
+        <span class="material-symbols-outlined icons" id="menu-close" onclick="toggleSidebar()">close</span>
+        <span class="material-symbols-outlined icons icons-none">history</span>
+        <span class="material-symbols-outlined icons icons-none">more_vert</span>
       </div>
     </section>
     <nav id="nav">
@@ -78,35 +78,35 @@
         </ul>
       </div>
     </nav>
-    <section class="nome">
+    <section class="nome" tabindex="0" onclick="closeSidebar()">
       <span>Nós</span>
       <span>Eles</span>
     </section>
-    <section class="resultado">
+    <section class="resultado" tabindex="0" onclick="closeSidebar()">
       <span>0</span>
       <span>0</span>
     </section>
-    <section class="triangulo">
+    <section class="triangulo" tabindex="0" onclick="closeSidebar()">
       <div class="div-01-02">
         <div class="div-01"><img src="imagens/triangulo.png" alt="triangulo"></div>
         <div class="div-02"><img src="imagens/triangulo.png" alt="triangulo"></div>
       </div>
     </section>
-    <section class="adicionar">
+    <section class="adicionar" tabindex="0" onclick="closeSidebar()">
       <div><img src="imagens/zap.png" alt="zap"></div>
       <div><img src="imagens/zap.png" alt="zap"></div>
     </section>
-    <section class="truco">
+    <section class="truco" tabindex="0" onclick="closeSidebar()">
       <div class="div">
         <div><img src="imagens/favoritos.png" alt="coração"></div>
         <p>Truco!</p>
         <div><img src="imagens/favoritos.png" alt="coração"></div>
       </div>
     </section>
-    <section class="vitoria">
+    <section class="vitoria" tabindex="0" onclick="closeSidebar()">
       <div><span>Vitórias</span></div>
     </section>
-    <section class="resultato-final">
+    <section class="resultato-final" tabindex="0" onclick="closeSidebar()">
       <div>
         <span>0</span>
         <span>0</span>

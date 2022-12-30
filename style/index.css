@@ -71,6 +71,11 @@ body, html {
   height: 24px;
   margin-left: -6px;
 }
+
+.icons#menu-close {
+  display: none;
+  transition: 1s;
+}
 /* //// */
 
 
