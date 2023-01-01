@@ -10,20 +10,20 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
 <body>
-  <main id="conteudo">
-    <section class="header">
-      <div class="icons-left">
-        <span id="icon-menu" class="material-symbols-outlined icons" onclick="toggleSidebar()">menu</span>
-        <h4 class="titulo">Truco</h4>
-      </div>
-      <div class="icons-right">
-        <span class="material-symbols-outlined icons">close</span>
-        <span class="material-symbols-outlined icons" id="escondido">history</span>
-        <span 
-        class="material-symbols-outlined icons"
-        >more_vert</span>
-      </div>
-    </section>
+  <header class="header">
+    <div class="icons-left">
+      <span id="icon-menu" class="material-symbols-outlined icons" onclick="toggleSidebar()">menu</span>
+      <h4 class="titulo">Truco</h4>
+    </div>
+    <div class="icons-right">
+      <span class="material-symbols-outlined icons">close</span>
+      <span class="material-symbols-outlined icons" id="escondido">history</span>
+      <span 
+      class="material-symbols-outlined icons"
+      >more_vert</span>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="0" onclick="closeSidebar()">
     <nav id="nav">
       <div class="menu-titulo">
         <h3>Donato Florencio</h3>
@@ -90,35 +90,35 @@
         </ul>
       </div>
     </nav>
-    <section class="nome" tabindex="0" onclick="closeSidebar()">
+    <section class="nome">
       <span>Nós</span>
       <span>Eles</span>
     </section>
-    <section class="resultado" tabindex="0" onclick="closeSidebar()">
+    <section class="resultado">
       <span>0</span>
       <span>0</span>
     </section>
-    <section class="triangulo" tabindex="0" onclick="closeSidebar()">
+    <section class="triangulo">
       <div class="div-01-02">
         <div class="div-01"><img src="imagens/triangulo.png" alt="triangulo"></div>
         <div class="div-02"><img src="imagens/triangulo.png" alt="triangulo"></div>
       </div>
     </section>
-    <section class="adicionar" tabindex="0" onclick="closeSidebar()">
+    <section class="adicionar">
       <div><img src="imagens/zap.png" alt="zap"></div>
       <div><img src="imagens/zap.png" alt="zap"></div>
     </section>
-    <section class="truco" tabindex="0" onclick="closeSidebar()">
+    <section class="truco">
       <div class="div">
         <div><img src="imagens/favoritos.png" alt="coração"></div>
         <p>Truco!</p>
         <div><img src="imagens/favoritos.png" alt="coração"></div>
       </div>
     </section>
-    <section class="vitoria" tabindex="0" onclick="closeSidebar()">
+    <section class="vitoria">
       <div><span>Vitórias</span></div>
     </section>
-    <section class="resultato-final" tabindex="0" onclick="closeSidebar()">
+    <section class="resultato-final">
       <div>
         <span>0</span>
         <span>0</span>
