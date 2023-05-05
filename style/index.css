@@ -87,7 +87,7 @@ body, html {
   max-width: 100vw;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .nome span {
